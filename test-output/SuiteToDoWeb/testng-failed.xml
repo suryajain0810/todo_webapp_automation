@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteToDoWeb]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestTodoWeb(failed)">
+    <classes>
+      <class name="com.org.todo.TestToDo">
+        <methods>
+          <include name="duplicateItems"/>
+          <include name="listBlockEmpty"/>
+          <include name="clearOnRefreshBrowser"/>
+          <include name="InitialSetUp"/>
+          <include name="editNotAllowed"/>
+        </methods>
+      </class> <!-- com.org.todo.TestToDo -->
+    </classes>
+  </test> <!-- TestTodoWeb(failed) -->
+</suite> <!-- Failed suite [SuiteToDoWeb] -->

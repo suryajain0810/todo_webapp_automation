@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SuiteToDoWeb" class="navigator-link">
+              <span class="suite-name border-failed">SuiteToDoWeb</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SuiteToDoWeb" class="navigator-link ">
+                    <span>C:\Users\jains\IdeaProjects\ToDoTest\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SuiteToDoWeb" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SuiteToDoWeb" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SuiteToDoWeb" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SuiteToDoWeb" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SuiteToDoWeb" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SuiteToDoWeb" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteToDoWeb" class="hide-methods failed suite-SuiteToDoWeb"> (hide)</a> <!-- hide-methods failed suite-SuiteToDoWeb -->
+                      <a href="#" panel-name="suite-SuiteToDoWeb" class="show-methods failed suite-SuiteToDoWeb"> (show)</a> <!-- show-methods failed suite-SuiteToDoWeb -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteToDoWeb">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="clearOnRefreshBrowser">clearOnRefreshBrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="duplicateItems">duplicateItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="editNotAllowed">editNotAllowed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="listBlockEmpty">listBlockEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteToDoWeb -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SuiteToDoWeb" class="hide-methods passed suite-SuiteToDoWeb"> (hide)</a> <!-- hide-methods passed suite-SuiteToDoWeb -->
+                      <a href="#" panel-name="suite-SuiteToDoWeb" class="show-methods passed suite-SuiteToDoWeb"> (show)</a> <!-- show-methods passed suite-SuiteToDoWeb -->
+                    </span>
+                    <div class="method-list-content passed suite-SuiteToDoWeb">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="clearCompleteToDo">clearCompleteToDo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="deleteToDo">deleteToDo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="editToDo">editToDo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="elements">elements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteToDoWeb" title="com.org.todo.TestToDo" class="method navigator-link" hash-for-method="itemWithSpace">itemWithSpace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteToDoWeb -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SuiteToDoWeb" class="panel SuiteToDoWeb">
+          <div class="suite-SuiteToDoWeb-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.org.todo.TestToDo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearOnRefreshBrowser">
+                  </a> <!-- clearOnRefreshBrowser -->
+                  <span class="method-name">clearOnRefreshBrowser</span>
+                  <div class="stack-trace">java.lang.AssertionError: All items should be cleared out on refresh expected [false] but found [true]
+	at com.org.todo.Util.refreshBrowser(Util.java:252)
+	at com.org.todo.TestToDo.clearOnRefreshBrowser(TestToDo.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="duplicateItems">
+                  </a> <!-- duplicateItems -->
+                  <span class="method-name">duplicateItems</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test passed - User should not be able to add same item did not expect [Todo item one] but found [Todo item one]
+	at com.org.todo.Util.duplicateItems(Util.java:272)
+	at com.org.todo.TestToDo.duplicateItems(TestToDo.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNotAllowed">
+                  </a> <!-- editNotAllowed -->
+                  <span class="method-name">editNotAllowed</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test is failed - user should not be able to edit the checked field expected [false] but found [true]
+	at com.org.todo.Util.editOnCheckedFieldNotAllowed(Util.java:237)
+	at com.org.todo.TestToDo.editNotAllowed(TestToDo.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listBlockEmpty">
+                  </a> <!-- listBlockEmpty -->
+                  <span class="method-name">listBlockEmpty</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=93.0.4577.63)
+  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;LAPTOP-5JP91O4B&apos;, ip: &apos;192.168.178.24&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53808}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}), userDataDir=C:\Users\jains\AppData\Local\Temp\scoped_dir33048_784177654}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=93.0.4577.63, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 27244fb65264c15c717adfcf60c41978
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at com.org.todo.Util.clearField(Util.java:207)
+	at com.org.todo.TestToDo.listBlockEmpty(TestToDo.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteToDoWeb-class-failed -->
+          <div class="suite-SuiteToDoWeb-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.org.todo.TestToDo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearCompleteToDo">
+                  </a> <!-- clearCompleteToDo -->
+                  <span class="method-name">clearCompleteToDo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteToDo">
+                  </a> <!-- deleteToDo -->
+                  <span class="method-name">deleteToDo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editToDo">
+                  </a> <!-- editToDo -->
+                  <span class="method-name">editToDo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="elements">
+                  </a> <!-- elements -->
+                  <span class="method-name">elements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemWithSpace">
+                  </a> <!-- itemWithSpace -->
+                  <span class="method-name">itemWithSpace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteToDoWeb-class-passed -->
+        </div> <!-- panel SuiteToDoWeb -->
+        <div panel-name="test-xml-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\jains\IdeaProjects\ToDoTest\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SuiteToDoWeb&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestTodoWeb&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.org.todo.TestToDo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestTodoWeb --&gt;
+&lt;/suite&gt; &lt;!-- SuiteToDoWeb --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SuiteToDoWeb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestTodoWeb (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SuiteToDoWeb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SuiteToDoWeb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SuiteToDoWeb');
+function tableData_SuiteToDoWeb() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'itemWithSpace')
+data.setCell(0, 2, 'com.org.todo.TestToDo')
+data.setCell(0, 3, 10922);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'elements')
+data.setCell(1, 2, 'com.org.todo.TestToDo')
+data.setCell(1, 3, 1333);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'editToDo')
+data.setCell(2, 2, 'com.org.todo.TestToDo')
+data.setCell(2, 3, 1221);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clearCompleteToDo')
+data.setCell(3, 2, 'com.org.todo.TestToDo')
+data.setCell(3, 3, 1177);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deleteToDo')
+data.setCell(4, 2, 'com.org.todo.TestToDo')
+data.setCell(4, 3, 1102);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clearOnRefreshBrowser')
+data.setCell(5, 2, 'com.org.todo.TestToDo')
+data.setCell(5, 3, 702);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'editNotAllowed')
+data.setCell(6, 2, 'com.org.todo.TestToDo')
+data.setCell(6, 3, 622);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'duplicateItems')
+data.setCell(7, 2, 'com.org.todo.TestToDo')
+data.setCell(7, 3, 536);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'listBlockEmpty')
+data.setCell(8, 2, 'com.org.todo.TestToDo')
+data.setCell(8, 3, 388);
+window.suiteTableData['SuiteToDoWeb']= { tableData: data, tableDiv: 'times-div-SuiteToDoWeb'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-SuiteToDoWeb">
+              </div> <!-- times-div-SuiteToDoWeb -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SuiteToDoWeb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SuiteToDoWeb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.todo.TestToDo</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">elements</span>
+                <span class="method-start">2449 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">3782 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editToDo</span>
+                <span class="method-start">5467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">6688 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteToDo</span>
+                <span class="method-start">8414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">9516 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clearCompleteToDo</span>
+                <span class="method-start">11223 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">12400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">itemWithSpace</span>
+                <span class="method-start">14074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">24996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">listBlockEmpty</span>
+                <span class="method-start">26688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">27107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editNotAllowed</span>
+                <span class="method-start">28755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">29377 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">duplicateItems</span>
+                <span class="method-start">30963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialSetUp</span>
+                <span class="method-start">31500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clearOnRefreshBrowser</span>
+                <span class="method-start">33133 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
